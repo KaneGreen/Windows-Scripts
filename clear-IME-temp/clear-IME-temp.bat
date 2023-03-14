@@ -1,0 +1,1 @@
+DEL /F %AppData%\Microsoft\InputMethod\Chs\UDP*.tmp
