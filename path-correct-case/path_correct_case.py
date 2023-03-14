@@ -4,10 +4,9 @@ import sys
 original_path = sys.argv[1]
 
 originals = list(filter(lambda x: len(x) > 0, original_path.split(";")))
-
 standards = list(map(os.path.realpath, originals))
 
-# GPG4win的路径是个特例 ‘c:\program files (x86)\gpg4win\..\gnupg\bin’
+# Gpg4win's path is a special case 'c:\program files (x86)\gpg4win\..\gnupg\bin'
 special = "\\..\\"
 for i, line in enumerate(originals):
     lowercase = line.lower()
